@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ImageInput?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="apBerita" prefHeight="616.0" prefWidth="875.0" stylesheets="@../css/theme.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="desa.PageBeritaController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="571.0" layoutY="45.0" stroke="BLACK" strokeType="INSIDE" styleClass="rectangle" width="247.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#4ecfde" height="48.0" layoutY="-2.0" stroke="#4ecfde" strokeType="INSIDE" styleClass="rectangle" width="878.0" />
+      <TextArea fx:id="fBerita" layoutX="26.0" layoutY="153.0" prefHeight="168.0" prefWidth="200.0" promptText="Isi Berita" />
+      <TextField fx:id="fJudul" layoutX="27.0" layoutY="64.0" prefHeight="25.0" prefWidth="200.0" promptText="Judul Berita" />
+      <DatePicker fx:id="fTanggal" layoutX="26.0" layoutY="105.0" prefHeight="25.0" prefWidth="200.0" promptText="Tanggal" />
+      <TableView fx:id="tableBerita" layoutX="318.0" layoutY="64.0" prefHeight="293.0" prefWidth="510.0">
+        <columns>
+            <TableColumn fx:id="cId" prefWidth="71.33334350585938" text="Id Berita" />
+          <TableColumn fx:id="cJudul" prefWidth="94.66668701171875" text="Judul Berita" />
+          <TableColumn fx:id="cTanggal" prefWidth="83.99993896484375" text="Tanggal" />
+            <TableColumn fx:id="cIsiBerita" prefWidth="224.6666259765625" text="Isi Berita" />
+        </columns>
+      </TableView>
+           <Button fx:id="btnBack" layoutX="27.0" layoutY="7.0" mnemonicParsing="false" onAction="#actionBack" prefHeight="25.0" prefWidth="48.0" text="Back">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="file:/D:/Perkuliahan/Semester%20IV/OOP/Praktikum/FinalProject/Kelompok/Desa/src/img/back.png" />
+               </source>
+            </ImageInput>
+         </effect></Button>
+      <Text fill="WHITE" layoutX="276.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="textHome" text="Berita Desa" wrappingWidth="168.2447967529297" />
+      <Button fx:id="btnLogout" layoutX="792.0" layoutY="9.0" mnemonicParsing="false" onAction="#actionLogout" prefHeight="25.0" prefWidth="48.0">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="file:/D:/Perkuliahan/Semester%20IV/OOP/Praktikum/FinalProject/Kelompok/Desa/src/img/logout.png" />
+               </source>
+            </ImageInput>
+         </effect>
+      </Button>
+      <Button fx:id="btnAdd" layoutX="14.0" layoutY="373.0" mnemonicParsing="false" onAction="#actionAdd" onDragDetected="#actionAdd" prefHeight="23.0" prefWidth="59.0" styleClass="btnAdd" text="Add" />
+      <Button fx:id="btnUpdate" layoutX="84.0" layoutY="373.0" mnemonicParsing="false" onAction="#actionUpdate" onDragDetected="#actionUpdate" styleClass="btnDelete" text="Update" />
+      <Button fx:id="btnDelete" layoutX="162.0" layoutY="373.0" mnemonicParsing="false" onAction="#actionDelete" styleClass="btnUpdate" text="Delete" />
+   </children>
+</AnchorPane>

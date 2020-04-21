@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ImageInput?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="ApSaran" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="616.0" prefWidth="875.0" stylesheets="@../css/theme.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="desa.PageSaranController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="567.0" layoutX="-2.0" layoutY="49.0" stroke="BLACK" strokeType="INSIDE" width="283.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#4ecfde" height="49.0" layoutX="1.0" layoutY="-1.0" stroke="#4ecfde" strokeType="INSIDE" styleClass="textHome" width="875.0" />
+      <TextField fx:id="fNamaDesa" layoutX="24.0" layoutY="55.0" prefHeight="35.0" prefWidth="214.0" promptText="Nama Desa" />
+      <TextArea fx:id="fSaran" layoutX="24.0" layoutY="111.0" prefHeight="203.0" prefWidth="214.0" promptText="Saran" />
+      <Text fill="WHITE" fontSmoothingType="LCD" layoutX="297.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="textHome" text="Berikan Saran Anda" />
+      <Button fx:id="btnAdd" layoutX="17.0" layoutY="330.0" mnemonicParsing="false" onAction="#actionAdd" prefHeight="23.0" prefWidth="59.0" styleClass="btnAdd" text="Add" />
+      <Button fx:id="btnUpdate" layoutX="96.0" layoutY="330.0" mnemonicParsing="false" onAction="#actionUpdate" styleClass="btnUpdate" text="Update" />
+      <Button fx:id="btnDelete" layoutX="179.0" layoutY="330.0" mnemonicParsing="false" onAction="#actionDelete" prefHeight="23.0" prefWidth="65.0" styleClass="btnDelete" text="Delete" />
+      <TableView fx:id="tabelSaran" layoutX="303.0" layoutY="78.0" prefHeight="332.0" prefWidth="545.0">
+        <columns>
+            <TableColumn fx:id="cId" prefWidth="69.33331298828125" text="Id Saran" />
+          <TableColumn fx:id="cNamaDesa" prefWidth="134.00003051757812" text="Nama desa" />
+            <TableColumn fx:id="cSaran" prefWidth="339.999989827474" text="Isi Saran" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnLogout" layoutX="809.0" layoutY="13.0" mnemonicParsing="false" onAction="#actionLogout" prefHeight="25.0" prefWidth="51.0">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="file:/D:/Perkuliahan/Semester%20IV/OOP/Praktikum/FinalProject/Kelompok/Desa/src/img/logout.png" />
+               </source>
+            </ImageInput>
+         </effect>
+      </Button>
+      <Button fx:id="btnBack" layoutY="-1.0" mnemonicParsing="false" onAction="#actionBack" prefHeight="25.0" prefWidth="51.0" text="Back">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="file:/D:/Perkuliahan/Semester%20IV/OOP/Praktikum/FinalProject/Kelompok/Desa/src/img/back.png" />
+               </source>
+            </ImageInput>
+         </effect></Button>
+   </children>
+</AnchorPane>

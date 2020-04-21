@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated May 15, 2019 12:02:34 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="entity.Kdesa" table="KDESA" schema="PUBLIC" catalog="DESA" optimistic-lock="version">
+        <id name="id" type="java.lang.Integer">
+            <column name="ID" />
+            <generator class="identity" />
+        </id>
+        <property name="namaDesa" type="string">
+            <column name="NAMA_DESA" />
+        </property>
+        <property name="deskripsiDesa" type="string">
+            <column name="DESKRIPSI_DESA" length="5000" />
+        </property>
+        <property name="visiMisi" type="string">
+            <column name="VISI_MISI" length="1000" />
+        </property>
+        <property name="organisasi" type="string">
+            <column name="ORGANISASI" length="1000" />
+        </property>
+        <property name="prestasi" type="string">
+            <column name="PRESTASI" length="500" />
+        </property>
+        <property name="objectWisata" type="string">
+            <column name="OBJECT_WISATA" length="1000" />
+        </property>
+        <property name="gambar" type="string">
+            <column name="GAMBAR" />
+        </property>
+    </class>
+</hibernate-mapping>

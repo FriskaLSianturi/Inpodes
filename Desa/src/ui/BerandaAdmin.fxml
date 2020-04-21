@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ImageInput?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="ApBeranda" prefHeight="616.0" prefWidth="875.0" style="-fx-background-color: gr;" stylesheets="@../css/theme.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="desa.BerandaController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="575.0" layoutX="-1.0" layoutY="44.0" stroke="BLACK" strokeType="INSIDE" width="198.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#4ecfde" height="46.0" layoutX="-1.0" stroke="#4ecfde" strokeType="INSIDE" width="875.0" />
+      <Button fx:id="btnBeranda" layoutX="36.0" layoutY="63.0" mnemonicParsing="false" onAction="#actionBeranda" prefHeight="46.0" prefWidth="99.0" styleClass="textbtn" stylesheets="@../css/theme.css" text="Beranda" textFill="#fffdfd" />
+      <Button fx:id="btnDesa" layoutX="40.0" layoutY="131.0" mnemonicParsing="false" onAction="#actionDesa" prefHeight="46.0" prefWidth="76.0" styleClass="textbtn" text="Desa" textFill="#fffdfd" />
+      <Button fx:id="btnSaran" layoutX="36.0" layoutY="191.0" mnemonicParsing="false" onAction="#actionSaran" prefHeight="46.0" prefWidth="83.0" styleClass="textbtn" text="Saran" textFill="#fff9f9" />
+      <Button fx:id="btnBerita" layoutX="36.0" layoutY="251.0" mnemonicParsing="false" onAction="#actionBerita" prefHeight="46.0" prefWidth="91.0" styleClass="textbtn" text="Berita" textFill="WHITE" />
+      <Text layoutX="201.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="textHome" text="INPODES" wrappingWidth="99.33333471417421" />
+      <ImageView fitHeight="210.0" fitWidth="254.0" layoutX="360.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/desa-penglipuran-bali.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnLogout" layoutX="791.0" layoutY="7.0" mnemonicParsing="false" onAction="#actionLogout" stylesheets="@../css/theme.css" text="Logout">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="file:/D:/Perkuliahan/Semester%20IV/OOP/Praktikum/FinalProject/Kelompok/Desa/src/img/logout.png" />
+               </source>
+            </ImageInput>
+         </effect>
+      </Button>
+      <Label layoutX="225.0" layoutY="317.0" prefHeight="31.0" prefWidth="565.0" text="Inpodes merupakan aplikasi yang berisikan informasi " />
+      <Label layoutX="226.0" layoutY="357.0" prefHeight="31.0" prefWidth="574.0" text="mengenai desa-desa yang bagus yang memiliki banyak keindahan " />
+      <Label layoutX="226.0" layoutY="389.0" prefHeight="31.0" prefWidth="590.0" text="namun sayangnya tidak diperkenalkan ke pada kalangan masyarakat." />
+      <Label layoutX="225.0" layoutY="427.0" prefHeight="31.0" prefWidth="616.0" text="Pada aplikasi ini disajikan berbagai macam informasi mengebenai " />
+      <Label layoutX="223.0" layoutY="458.0" prefHeight="31.0" prefWidth="625.0" text="desa- desa tersebut. Visitor bisa memberikan tanggapan" />
+      <Label layoutX="225.0" layoutY="489.0" prefHeight="31.0" prefWidth="565.0" text="mengenai desa yang pernah dikunjunginya. Pada aplikasi ini , pengguna juga diperkenankan" />
+      <Label layoutX="226.0" layoutY="538.0" prefHeight="31.0" prefWidth="625.0" text="untuk melihat berita sekitar desa-desa tersebut." />
+   </children>
+</AnchorPane>

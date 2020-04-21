@@ -1,0 +1,148 @@
+.background {
+    -fx-background-color: #b3e5fc;
+}
+
+.text-field {
+    -fx-font-size: 10pt;
+    -fx-border-radius: 100px;
+    -fx-font-family: "Sitka Display";
+}
+.text-area {
+    -fx-font-size: 10pt;
+    -fx-border-radius: 100px;
+    -fx-font-family: "Sitka Display";
+}
+.text{
+	-fx-font-family:"Sitka Display";
+        -fx-color: #3a3a3a;
+        -fx-font-size: 10pt;
+        -fx-text-fill: #ffffff;
+}
+
+.textAdd{
+	-fx-font-family:"Sitka Display";
+        -fx-background-color: #13023c;
+        -fx-font-size: 13pt;
+}
+.textHome{
+	-fx-font-family:"Sitka Display";
+	-fx-font-size: 15pt;
+    
+}
+
+/*--------------
+.buttonLogin {    
+    -fx-background-color: # ;
+    -fx-font-family: "Sitka Display";
+ } Button*/
+
+ .btnAdd{
+   -fx-background-color:  #2a9ef3;
+   -fx-font-family: "Sitka Display";   
+   -fx-text-fill: #ffffff;
+ }
+ .btnDelete{   
+   -fx-background-color:  #f33e2a;
+    -fx-font-family: "Sitka Display";   
+     -fx-text-fill: #ffffff;
+ }
+  .btnUpdate{
+   -fx-background-color: #23a340 ;
+   -fx-text-fill: #ffffff;
+   -fx-font-family: "Sitka Display";   
+ }
+ .btnback{
+   -fx-background-color: #da7b41 ;
+    -fx-font-family: "Sitka Display";   
+      -fx-text-fill: #ffffff;
+ }
+.btnHome{
+	-fx-background-color:#00AE91;
+ 	-fx-font-size: 13pt;
+ 	-fx-font-weight: bold;
+ 	-fx-font-family: "Sitka Display";
+        -fx-text-fill: #ffffff;
+}
+.button:hover {
+    -fx-background-color: #3a3a3a;
+}
+
+.button:pressed,
+.button:default:hover:pressed {
+  -fx-background-color: white;
+  -fx-text-fill: #1d1d1d;
+}
+
+.button:focused {
+    -fx-border-color: white, white;
+    -fx-border-width: 1, 1;
+    -fx-border-style: solid, segments(1, 1);
+    -fx-border-radius: 0, 0;
+    -fx-border-insets: 1 1 1 1, 0;
+}
+.separator{
+	-fx-background-color: #000000;
+}
+
+.label {
+    -fx-font-size: 11pt;
+    -fx-font-family: "Sitka Display";
+    -fx-text-fill: black;
+    -fx-opacity: 0.6;
+}
+
+.label-bright {
+    -fx-font-size: 11pt;
+    -fx-font-family: "Sitka Display";
+    -fx-text-fill: white;
+    -fx-opacity: 1;
+}
+
+.label-header {
+    -fx-font-size: 32pt;
+    -fx-font-family: "Segoe UI Light";
+    -fx-text-fill: #000000;
+    -fx-opacity: 1;
+}
+
+
+ .button:disabled, .button:default:disabled {
+    -fx-opacity: 0.4;
+    -fx-background-color: #1d1d1d;
+    -fx-text-fill: white;
+}
+
+.btnSearch{
+    -fx-background-color :#2a9ef3;
+    -fx-border: #2a9ef3 solid;
+    -fx-text-fill:#ffffff;
+}
+
+.button:default:hover {
+    -fx-background-color: derive(-fx-focus-color,30%);
+}
+.textbtn{
+    -fx-background-color: #000000;
+    -fx-font-size: 22pt;
+    -fx-font-family: "Sitka Display";
+    -fx-text-fill: white;
+}
+.textlogout{
+    -fx-font-size: 10pt;
+    -fx-font-family: "Sitka Display";
+    -fx-text-fill: white;
+}
+.textdes{
+     -fx-font-size: 10pt;
+    -fx-font-family: "Sitka Display";
+    -fx-text-fill: #000000;
+}
+
+.rectangle{
+    -fx-background-color: #dadada;
+    -fx-stroke :#dadada;
+}
+.rectangeleUp{
+    -fx-background-color: #687179;
+    -fx-border-color: #687179 solid;
+}
